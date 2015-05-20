@@ -1,0 +1,20 @@
+<h1>TODO.COM</h1>
+<h1>Liste des Taches</h1>
+
+<table>
+
+	<tr>
+		<td>{{ tache.titre }}</td>
+        </tr>
+        <tr>
+		<td>{{ tache.description }}</td>
+        </tr>
+        <tr>
+		<td>{{ tache.dateTache|date('d/m/Y') }}</td>
+	</tr>
+
+</table>
+
+<p><a href="{{ path('myapp_tache_lister') }}">Retour</a><p>
+    
+    <p>Copyright all right reserved /created by MSIM</p>

@@ -1,0 +1,11 @@
+<h1>Ajouter une Tache</h1>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+<form action="" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form>
+<p><a href="{{ path('myapp_tache_lister') }}"><input type="submit" value="Retour" /></a></p>

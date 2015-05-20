@@ -1,0 +1,4 @@
+my_app_todo:
+    resource: "@MyAppTodoBundle/Resources/config/routing.yml"
+    prefix:   /MyApp
+

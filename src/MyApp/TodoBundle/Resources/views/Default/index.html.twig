@@ -1,0 +1,11 @@
+
+<html>
+	<body>
+		<h1>Liste des Taches</h1>
+		{% for tac in tache %}
+			<p>{{ tac.titre }}</p>
+		{% else %}
+			<p>Aucune tache n'a été trouvée.</p>
+		{% endfor %}
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<h1>TODO.COM</h1>
+<h1>A faire :</h1>
+
+<p><a href="{{ path('myapp_tache_ajouter') }}">Ajouter une Tache</a><p>
+
+<table>
+{% for a in tache %}
+	<tr>
+		<td><li type=disc><a href="{{ path('myapp_tache_listerall', { 'id': a.id })  }}">{{ a.titre }}<a/></li></td>
+	</tr>
+{% else %}
+	<tr><td>Aucun tache n'a été trouvé.</td></tr>
+{% endfor %}
+</table>
+
+
+    
+  <p>Copyright all right reserved /created by MSIM</p>    

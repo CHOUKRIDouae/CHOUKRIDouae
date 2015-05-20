@@ -1,0 +1,15 @@
+myapp_accueil:
+    pattern: /
+    defaults: { _controller: MyAppTodoBundle:Default:index }    
+myapp_tache_lister:
+  pattern: /tache/
+  defaults: { _controller: MyAppTodoBundle:Tache:lister }
+myapp_tache_listerall:
+  pattern: /tache/listerall/{id}
+  defaults: { _controller: MyAppTodoBundle:Tache:listerall }
+myapp_tache_ajouter:
+  pattern: /tache/ajouter
+  defaults: { _controller: MyAppTodoBundle:Tache:ajouter }
+
+
+
